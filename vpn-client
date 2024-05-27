@@ -1,0 +1,14 @@
+client
+proto udp
+dev tun
+comp-lzo
+persist key
+persist tun
+verb 3
+remote 192.168.250.0
+resolv-retry infinite
+nobind
+remote-cert-tls server
+ca ca.crt
+cert client.crt
+key client.crt
